@@ -1,0 +1,45 @@
+HEADLINE
+Étudiant à l’École 42 | Systèmes, réseaux & cybersécurité | C, C++, Python | Low-level
+
+À PROPOS
+Étudiant à l’École 42 depuis octobre 2025, je construis mon parcours autour des systèmes, du réseau et de la cybersécurité. Mes projets m’amènent à travailler en C, C++ et Python sur Linux et Windows, au plus près des processus, de la mémoire et des communications réseau.
+
+À 42, Born2beroot m’a permis d’aborder la sécurisation d’un serveur Debian, tandis que Minishell et Philosophers ont renforcé ma compréhension d’Unix, des processus et de la concurrence. En parallèle, mes projets de recherche technique — notamment un framework client-serveur en TCP/Winsock et un injecteur de DLL Win64 — approfondissent ma compréhension des mécanismes internes des systèmes.
+
+Je recherche une alternance à partir de septembre 2026, avec un rythme de 2 semaines en entreprise et 1 semaine à l’école, dans un environnement systèmes, réseaux ou cybersécurité.
+
+FORMATION
+École 42
+Cursus informatique — RNCP niveau 7 en cours
+Depuis octobre 2025
+
+Baccalauréat général
+Spécialités Numérique et sciences informatiques / Mathématiques
+2024–2025
+
+COMPÉTENCES PRINCIPALES
+- C, C++, Python
+- Linux, Debian, Bash et environnement Unix
+- Processus, mémoire, multithreading, mutex et synchronisation
+- TCP, architectures client-serveur et Winsock
+- Sécurité système, permissions, reverse engineering et processus Windows
+
+PROJETS À METTRE EN AVANT
+
+Born2beroot — 2025
+Mise en place d’un serveur Debian sécurisé en environnement virtualisé. Configuration des utilisateurs, permissions et règles de sécurité système.
+
+C2 Framework — projet personnel de recherche technique
+Développement d’une architecture client-serveur pour l’exécution de commandes à distance, la gestion multi-agents et la communication réseau bas niveau en TCP avec Winsock.
+
+Minishell — 2025
+Implémentation d’un shell Unix en C : parsing, exécution de commandes, processus, pipes et redirections.
+
+Win64 DLL Injector — 2025, projet personnel de recherche technique
+Étude contrôlée de l’injection de DLL et du fonctionnement interne des processus Windows : manipulation mémoire, API système et chargement dynamique.
+
+Philosophers — 2025
+Programme multithread en C consacré aux mutex, à la synchronisation des ressources et aux problèmes de deadlock et de starvation.
+
+DISTINCTION
+Olympiades NSI — médaille de bronze, 3e place (2024)

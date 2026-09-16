@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Zibrian Cadinot</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #d7d7d7; }
+    body {
+      font-family: "Liberation Sans", Arial, sans-serif;
+      color: #161616;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 64mm 146mm;
+      overflow: hidden;
+    }
+    .sidebar {
+      background: #161616;
+      color: #fff;
+      padding: 11mm 7mm 9mm;
+      display: flex;
+      flex-direction: column;
+    }
+    .photo {
+      width: 39mm;
+      height: 39mm;
+      margin: 0 auto 7mm;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      border: 1.2mm solid #fff;
+    }
+    .side-section { margin-top: 6mm; }
+    .side-section:first-of-type { margin-top: 0; }
+    .side-title {
+      margin: 0 0 2.6mm;
+      padding-bottom: 1.4mm;
+      border-bottom: .35mm solid #fff;
+      font-size: 10.2pt;
+      line-height: 1.1;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+    }
+    .contact-line {
+      margin: 0 0 2.2mm;
+      font-size: 8.2pt;
+      line-height: 1.28;
+      overflow-wrap: anywhere;
+    }
+    a { color: inherit; text-decoration: none; }
+    .skill-group { margin-bottom: 3.2mm; }
+    .skill-group:last-child { margin-bottom: 0; }
+    .skill-label {
+      margin: 0 0 1mm;
+      color: #cfcfcf;
+      font-size: 7.4pt;
+      font-weight: 700;
+      letter-spacing: .55px;
+      text-transform: uppercase;
+    }
+    .skill-text, .language {
+      margin: 0;
+      font-size: 8.1pt;
+      line-height: 1.43;
+    }
+    .main {
+      padding: 12mm 11mm 9mm 10mm;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      margin: 0;
+      font-size: 25pt;
+      line-height: .98;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+    .target {
+      margin: 3mm 0 0;
+      font-size: 12.5pt;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: .55px;
+      text-transform: uppercase;
+    }
+    .availability {
+      margin: 1.4mm 0 0;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+    .rule {
+      width: 28mm;
+      height: .8mm;
+      margin: 4mm 0 3.5mm;
+      background: #161616;
+    }
+    .profile {
+      margin: 0;
+      font-size: 9.25pt;
+      line-height: 1.42;
+    }
+    .section { margin-top: 5.2mm; }
+    .section-title {
+      margin: 0 0 3mm;
+      display: flex;
+      align-items: center;
+      gap: 3mm;
+      font-size: 10.7pt;
+      line-height: 1;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+    .section-title::after {
+      content: "";
+      height: .35mm;
+      flex: 1;
+      background: #161616;
+    }
+    .project {
+      margin: 0 0 3.3mm;
+      padding-left: 3.2mm;
+      border-left: .55mm solid #1b1b1b;
+      break-inside: avoid;
+    }
+    .project:last-child { margin-bottom: 0; }
+    .project-head {
+      margin: 0 0 .7mm;
+      display: flex;
+      justify-content: space-between;
+      gap: 4mm;
+      align-items: baseline;
+    }
+    .project-name {
+      font-size: 9.4pt;
+      line-height: 1.15;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .project-year {
+      flex: none;
+      color: #555;
+      font-size: 7.7pt;
+      font-weight: 700;
+    }
+    .project-type {
+      margin-left: 1.4mm;
+      color: #666;
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .35px;
+    }
+    .project-desc {
+      margin: 0;
+      font-size: 8.35pt;
+      line-height: 1.33;
+    }
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 6mm;
+    }
+    .education-item { margin-bottom: 2.6mm; }
+    .education-item:last-child { margin-bottom: 0; }
+    .education-name {
+      margin: 0 0 .5mm;
+      font-size: 8.8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .education-detail, .award {
+      margin: 0;
+      font-size: 8.1pt;
+      line-height: 1.35;
+    }
+    .footer-note {
+      margin-top: auto;
+      padding-top: 3mm;
+      color: #666;
+      font-size: 7pt;
+      line-height: 1.25;
+    }
+    @media screen {
+      .page { box-shadow: 0 2mm 8mm rgba(0,0,0,.2); }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <aside class="sidebar">
+      <img class="photo" src="assets/photo.png" alt="Portrait de Zibrian Cadinot">
+
+      <section class="side-section">
+        <h2 class="side-title">Contact</h2>
+        <p class="contact-line">07 86 35 83 30</p>
+        <p class="contact-line"><a href="mailto:cadinotzibrian@gmail.com">cadinotzibrian@gmail.com</a></p>
+        <p class="contact-line">Seine-Maritime</p>
+        <p class="contact-line"><a href="https://github.com/Zibgame">github.com/Zibgame</a></p>
+        <p class="contact-line"><a href="https://www.linkedin.com/in/zibrian-cadinot">linkedin.com/in/zibrian-cadinot</a></p>
+      </section>
+
+      <section class="side-section">
+        <h2 class="side-title">Compétences</h2>
+        <div class="skill-group">
+          <p class="skill-label">Langages</p>
+          <p class="skill-text">C · C++ · Python</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Systèmes</p>
+          <p class="skill-text">Linux · Debian · Bash / Shell<br>Processus Unix · Gestion mémoire<br>Virtualisation</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Réseaux</p>
+          <p class="skill-text">TCP · Client-serveur<br>Communication réseau · Winsock</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Cybersécurité & low-level</p>
+          <p class="skill-text">Sécurité système · Permissions<br>Reverse engineering<br>Processus Windows · API système<br>Manipulation mémoire</p>
+        </div>
+      </section>
+
+      <section class="side-section">
+        <h2 class="side-title">Langues</h2>
+        <p class="language">Français — langue maternelle<br>Anglais — niveau B2</p>
+      </section>
+    </aside>
+
+    <main class="main">
+      <header>
+        <h1>Zibrian<br>Cadinot</h1>
+        <p class="target">Systèmes, réseaux & cybersécurité</p>
+        <p class="availability">Recherche d’alternance — septembre 2026<br>Rythme : 2 semaines en entreprise / 1 semaine à l’école</p>
+        <div class="rule"></div>
+        <p class="profile">Étudiant à l’École 42, je développe des bases solides en systèmes, réseau et cybersécurité par des projets en C, C++ et Python. Mes réalisations couvrent l’administration Linux, les communications TCP et la programmation bas niveau sous Unix et Windows. Je recherche une alternance à partir de septembre 2026.</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Projets sélectionnés</h2>
+
+        <article class="project">
+          <div class="project-head">
+            <div><span class="project-name">Born2beroot</span><span class="project-type">ÉCOLE 42</span></div>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">Mise en place d’un serveur Debian sécurisé en environnement virtualisé : utilisateurs, permissions et règles de sécurité système.</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div><span class="project-name">C2 Framework</span><span class="project-type">RECHERCHE TECHNIQUE</span></div>
+            <span class="project-year">Projet personnel</span>
+          </div>
+          <p class="project-desc">Architecture client-serveur, exécution de commandes à distance et gestion multi-agents ; communication réseau bas niveau en TCP avec Winsock.</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div><span class="project-name">Minishell</span><span class="project-type">ÉCOLE 42</span></div>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">Shell Unix en C : parsing et exécution de commandes, gestion des processus, pipes et redirections.</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div><span class="project-name">Win64 DLL Injector</span><span class="project-type">RECHERCHE TECHNIQUE</span></div>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">Étude contrôlée de l’injection de DLL : processus Windows, manipulation mémoire, API système et chargement dynamique.</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div><span class="project-name">Philosophers</span><span class="project-type">ÉCOLE 42</span></div>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">Programme multithread en C : mutex, synchronisation des ressources et prévention des deadlocks et de la starvation.</p>
+        </article>
+      </section>
+
+      <div class="bottom-grid">
+        <section class="section">
+          <h2 class="section-title">Formation</h2>
+          <div class="education-item">
+            <p class="education-name">École 42</p>
+            <p class="education-detail">Cursus informatique — RNCP niveau 7 en cours<br>Depuis octobre 2025</p>
+          </div>
+          <div class="education-item">
+            <p class="education-name">Baccalauréat général</p>
+            <p class="education-detail">Spécialités NSI / Mathématiques · 2024–2025</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Distinction</h2>
+          <p class="education-name">Olympiades NSI</p>
+          <p class="award">3<sup>e</sup> place, médaille de bronze — 2024<br>Algorithmie, optimisation de complexité et résolution de problèmes.</p>
+        </section>
+      </div>
+
+      <p class="footer-note">Projets techniques réalisés dans un cadre scolaire ou de recherche personnelle.</p>
+    </main>
+  </article>
+</body>
+</html>
